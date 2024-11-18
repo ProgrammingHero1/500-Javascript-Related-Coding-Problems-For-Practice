@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Practice Problems</title>
+    <style>
+        /* Basic styling */
+        .user-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .user-card {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            background-color: #f3f3f3;
+        }
+
+        #loader {
+            display: none;
+            text-align: center;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fetch Practice Problems</h1>
+
+    <button onclick="loadPosts()">Load Posts</button>
+    <button onclick="loadUsers()">Load Users</button>
+
+    <div id="loader">Loading...</div>
+
+    <h2>Posts:</h2>
+    <div id="post-container"></div>
+
+    <h2>Users:</h2>
+    <ul id="user-list"></ul>
+
+    <div id="user-container" class="user-grid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
