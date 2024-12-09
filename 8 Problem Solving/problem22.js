@@ -1,22 +1,22 @@
 //22. তোকে ক্যাফের মেনু বানাতে বলল। একটা ফাংশন লিখ যেখানে কফির নাম ইনপুট দিলে কফির দাম জানাবে।
 function getCoffeePrice(coffeeName) {
   const menu = {
-    এস্প্রেসো: 700,
-    লাটে: 800,
-    কাপুচিনো: 850,
-    ফ্রাপ্পুচিনো: 950,
-    মোকা: 900,
+    espresso: 700,
+    latte: 800,
+    cappuccino: 850,
+    frappuccino: 950,
+    mocha: 900,
   };
 
   const price = menu[coffeeName.toLowerCase()];
   if (price) {
-    return `${coffeeName} এর দাম: ${price} টাকা।`;
+    return `${coffeeName} price: ${price} Taka.`;
   } else {
-    return "মেনুতে সেই কফি নেই।";
+    return "That coffee is not on the menu.";
   }
 }
 
-// উদাহরণ ব্যবহার:
-const coffee = "লাটে";
+// Example usage:
+const coffee = "latte";
 const coffeePrice = getCoffeePrice(coffee);
 console.log(coffeePrice);

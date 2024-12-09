@@ -20,15 +20,15 @@ function findTallestFriend(
     maxHeight = height3;
   }
 
-  return `সবচেয়ে লম্বা বন্ধু: ${tallest} (${maxHeight} সেমি)`;
+  return `The tallest friend is: ${tallest} (${maxHeight} cm)`;
 }
 
-// উদাহরণ ব্যবহার:
-const friendName1 = "আলিফ";
+// Example usage:
+const friendName1 = "Alif";
 const height1 = 175;
-const friendName2 = "বাকির";
+const friendName2 = "Bakir";
 const height2 = 180;
-const friendName3 = "চিরণ";
+const friendName3 = "Chiran";
 const height3 = 178;
 
 const tallestFriend = findTallestFriend(

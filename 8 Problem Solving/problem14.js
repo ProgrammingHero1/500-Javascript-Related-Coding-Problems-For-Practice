@@ -5,19 +5,19 @@ function countBalls(balls) {
     green = 0;
 
   for (let ball of balls) {
-    if (ball.toLowerCase() === "লাল") {
+    if (ball.toLowerCase() === "red") {
       red++;
-    } else if (ball.toLowerCase() === "নীল") {
+    } else if (ball.toLowerCase() === "blue") {
       blue++;
-    } else if (ball.toLowerCase() === "সবুজ") {
+    } else if (ball.toLowerCase() === "green") {
       green++;
     }
   }
 
-  return `লাল বল: ${red}, নীল বল: ${blue}, সবুজ বল: ${green}`;
+  return `Red balls: ${red}, Blue balls: ${blue}, Green balls: ${green}`;
 }
 
-// উদাহরণ ব্যবহার:
-const ballColors = ["লাল", "নীল", "সবুজ", "লাল", "সবুজ", "নীল", "লাল"];
+// Example usage:
+const ballColors = ["red", "blue", "green", "red", "green", "blue", "red"];
 const ballCount = countBalls(ballColors);
 console.log(ballCount);

@@ -1,18 +1,18 @@
 //23. তোর ট্রাফিক সিগন্যাল প্র্যাকটিস করা দরকার। একটা ফাংশন লিখ যেখানে সিগন্যালের রঙ ইনপুট নিলে গাড়ি চলবে কি থামবে সেটা বলে দিবে।
 function trafficSignal(action) {
   const color = action.toLowerCase();
-  if (color === "লাল") {
-    return "থামো!";
-  } else if (color === "হলুদ") {
-    return "দেখো, পরের ইশারা আসছে।";
-  } else if (color === "সবুজ") {
-    return "চলো!";
+  if (color === "red") {
+    return "Stop!";
+  } else if (color === "yellow") {
+    return "Wait, the next signal is coming.";
+  } else if (color === "green") {
+    return "Go!";
   } else {
-    return "অবৈধ রঙ।";
+    return "Invalid color.";
   }
 }
 
-// উদাহরণ ব্যবহার:
-const signalColor = "হলুদ";
+// Example usage:
+const signalColor = "yellow";
 const signalAction = trafficSignal(signalColor);
 console.log(signalAction);

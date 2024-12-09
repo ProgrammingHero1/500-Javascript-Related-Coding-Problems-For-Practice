@@ -4,12 +4,12 @@ function calculateCalories(protein, fat, carbs) {
   const fatCalories = fat * 9;
   const carbCalories = carbs * 4;
   const totalCalories = proteinCalories + fatCalories + carbCalories;
-  return `মোট ক্যালোরি: ${totalCalories} ক্যালরি`;
+  return `Total calories: ${totalCalories} kcal`;
 }
 
-// উদাহরণ ব্যবহার:
-const proteinAmount = 50; // গ্রামে
-const fatAmount = 20; // গ্রামে
-const carbAmount = 60; // গ্রামে
+// Example usage:
+const proteinAmount = 50; // in grams
+const fatAmount = 20; // in grams
+const carbAmount = 60; // in grams
 const calories = calculateCalories(proteinAmount, fatAmount, carbAmount);
 console.log(calories);

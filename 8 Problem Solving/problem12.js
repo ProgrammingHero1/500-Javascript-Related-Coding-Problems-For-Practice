@@ -5,7 +5,7 @@ function calculateAverage(numbers) {
     sum += num;
   }
   const average = sum / numbers.length;
-  return `নাম্বারের গড়: ${average}`;
+  return `Average Number: ${average}`;
 }
 
 // উদাহরণ ব্যবহার:

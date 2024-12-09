@@ -2,17 +2,17 @@
 
 function isPrime(number) {
   if (number <= 1) {
-    return `${number} প্রাইম নাম্বার নয়।`;
+    return `${number} is not a prime number.`;
   }
   for (let i = 2; i < number; i++) {
     if (number % i === 0) {
-      return `${number} প্রাইম নাম্বার নয়।`;
+      return `${number} is not a prime number.`;
     }
   }
-  return `${number} প্রাইম নাম্বার।`;
+  return `${number} is a prime number.`;
 }
 
-// উদাহরণ ব্যবহার:
+// Example usage:
 const num = 11;
 const primeCheck = isPrime(num);
 console.log(primeCheck);

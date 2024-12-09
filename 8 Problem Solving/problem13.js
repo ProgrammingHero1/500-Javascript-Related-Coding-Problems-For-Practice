@@ -7,7 +7,7 @@ function milkshakeCalories(milk, sugar, iceCream) {
     iceCream.protein * 4 + iceCream.fat * 9 + iceCream.carbs * 4;
 
   const totalCalories = milkCalories + sugarCalories + iceCreamCalories;
-  return `মিল্ক শেকের মোট ক্যালোরি: ${totalCalories} ক্যালরি`;
+  return `Total calories in the milkshake: ${totalCalories} kcal`;
 }
 
 // উদাহরণ ব্যবহার:

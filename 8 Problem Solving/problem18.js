@@ -2,16 +2,16 @@
 function calculateProfitOrLoss(buyPrice, sellPrice) {
   if (sellPrice > buyPrice) {
     const profit = sellPrice - buyPrice;
-    return `লাভ হয়েছে: ${profit} টাকা।`;
+    return `Profit: ${profit} Taka.`;
   } else if (sellPrice < buyPrice) {
     const loss = buyPrice - sellPrice;
-    return `ক্ষতি হয়েছে: ${loss} টাকা।`;
+    return `Loss: ${loss} Taka.`;
   } else {
-    return "না লাভ, না ক্ষতি। দাম সমান।";
+    return "No profit, no loss. The price is the same.";
   }
 }
 
-// উদাহরণ ব্যবহার:
+// Example usage:
 const buyPrice = 100;
 const sellPrice = 85;
 const result = calculateProfitOrLoss(buyPrice, sellPrice);

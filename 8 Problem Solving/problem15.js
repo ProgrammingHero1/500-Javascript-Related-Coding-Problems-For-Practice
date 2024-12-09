@@ -2,10 +2,10 @@
 function calculateDiscountedPrice(price) {
   const discount = price * 0.15;
   const discountedPrice = price - discount;
-  return `ডিসকাউন্টের পর প্রোডাক্টের দাম: ${discountedPrice} টাকা`;
+  return `Product price after discount: ${discountedPrice} Taka`;
 }
 
-// উদাহরণ ব্যবহার:
+// Example usage:
 const originalPrice = 200;
 const finalPrice = calculateDiscountedPrice(originalPrice);
 console.log(finalPrice);

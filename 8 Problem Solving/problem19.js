@@ -4,11 +4,11 @@ function calculateRainfall(dailyRainfall) {
   for (let rain of dailyRainfall) {
     weeklyTotal += rain;
   }
-  const annualRainfall = weeklyTotal * 52; // সপ্তাহের মোট বৃষ্টি গুণ ৫২ সপ্তাহ
-  return `সাপ্তাহিক মোট বৃষ্টি: ${weeklyTotal} মিমি। বার্ষিক বৃষ্টির হার: ${annualRainfall} মিমি।`;
+  const annualRainfall = weeklyTotal * 52; // Total weekly rainfall multiplied by 52 weeks
+  return `Weekly total rainfall: ${weeklyTotal} mm. Annual rainfall: ${annualRainfall} mm.`;
 }
 
-// উদাহরণ ব্যবহার:
-const weeklyRain = [10, 15, 20, 5, 0, 25, 10]; // প্রতিদিনের বৃষ্টি মিমিতে
+// Example usage:
+const weeklyRain = [10, 15, 20, 5, 0, 25, 10]; // Daily rainfall in mm
 const rainfall = calculateRainfall(weeklyRain);
 console.log(rainfall);
